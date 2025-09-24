@@ -11,7 +11,7 @@ function Header() {
         <p className="text-lg text-amber-950 drop-shadow-lg p-2">
           The all user to visit the website and apply <br /> for job, internship and Trainee.
         </p>
-        <button className="bg-amber-950 text-white font-medium mt-4 py-3 px-6 rounded-lg shadow-md hover:bg-amber-700 transition ml-2">
+        <button className="bg-amber-950 text-white font-medium mt-4 py-3 px-6 rounded-lg shadow-md hover:bg-amber-700 transition ml-2" onClick={() => window.location.href = '/Signup'}>
           Get Started
         </button>
       </div>

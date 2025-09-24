@@ -26,10 +26,7 @@ const Dashboard = () => {
             <Link to="/trainee">Trainee</Link>
             <Link to="/job">Job</Link>
           </nav>
-          <button className='bg-[#4334ca] text-white px-5 py-2 rounded-lg hover:bg-[#3225a5] transition box-content ml-5 cursor-pointer'>
-            Sign In
-          </button>
-          <button className='bg-[#cf0f0f] text-white px-5 py-2 rounded-lg hover:bg-[#f50707] transition box-content cursor-pointer'>
+          <button className='bg-[#cf0f0f] text-white px-5 py-2 rounded-lg hover:bg-[#f50707] transition box-content cursor-pointer mr-6' onClick={() => window.location.href = '/Login'}>
             Log in
           </button>
         </div>
