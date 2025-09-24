@@ -511,8 +511,11 @@ const jobs = [
 function Internship() {
   return (
     <div>
-      <div>
-        <h1 className="text-4xl font-bold text-center pt-5">Internship Opportunities</h1>
+     <div className='bg-gray-100 shadow-md py-6 flex flex-col justify-center items-center rounded-2xl sticky top-0 z-50'>
+        <h1 className='text-4xl font-bold text-gray-800 text-center '>
+          <span className='text-[blue]'>Internship</span> Openings
+          <div className='w-40 md:w-60 h-1 border-b-4 border-amber-400 rounded-2xl mt-2 mx-auto'></div>
+        </h1>
       </div>
       <div className="grid gap-6 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {jobs.map((job) => (

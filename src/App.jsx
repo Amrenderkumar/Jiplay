@@ -3,8 +3,8 @@ import { RouterProvider } from "react-router-dom";
 import Dashboard from "./Component/Dashboard";
 import Signup from "./authentication/Signup";
 import Login from "./authentication/Login";
-import Privacypolicy from "./Component/Privacypolicy";
-import Internship from "./Internship/Internship";
+import Privacypolicy from "./Component/Privacypolicy/Privacypolicy";
+import Internship from "./Component/Internship/Internship";
 import { router } from "./router";
 
 

@@ -3,10 +3,10 @@ import Img from "../assets/Man.jpeg";
 function Header() {
   return (
     <div className="relative w-full">
-      <img className="w-full h-[700px] d-full " src={Img} alt="Man" />
-      <div className="absolute top-1/2 left-10 transform -translate-y-1/2">
+      <img className="w-full h-[725px] d-full " src={Img} alt="Man" />
+      <div className="absolute top-1/2 left-10 transform -translate-y-1/2 mt-7">
         <h2 className="text-4xl font-semibold text-amber-950 drop-shadow-lg p-2">
-          Welcome to JiPlay
+          Welcome to Jobforge
         </h2>
         <p className="text-lg text-amber-950 drop-shadow-lg p-2">
           The all user to visit the website and apply <br /> for job, internship and Trainee.

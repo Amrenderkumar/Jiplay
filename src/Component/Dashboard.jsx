@@ -1,5 +1,5 @@
 import Categories from './Categories';
-import Footer from './Footer';
+import Footer from './Footer/Footer';
 import Header from './Header';
 import Latestjob from './Latestjob';
 import Profile from './Profile';
@@ -8,13 +8,15 @@ import { Link } from 'react-router-dom';
 const Dashboard = () => {
   return (
     <div className='bg-white'>
-      <div className='flex justify-between items-center mx-auto max-w-7xl h-16 px-4'>
+      <div className='flex justify-between items-center w-full  h-16 px-4 fixed top-0 left-0 right-0 bg-white z-50 shadow-md'>
         <div className='cursor-pointer'>
-          <h1 className='text-3xl font-bold'>
-            <div className='inline-block h-10 w-10 rounded-2xl overflow-hidden sm:mr-2 mr-0'>
-              <img className='h-15' src="src/assets/db2.jpg" alt="JiPlay" />
-            </div>
-            Ji<span className='text-[#4334ca]'>play</span>
+          <h1 className='text-3xl font-bold ml-5 text-center'>
+            <Link className='flex items-center space-x-2' to="/">
+              <div className='inline-block h-10 w-10 rounded-2xl overflow-hidden sm:mr-2 mr-0'>
+                <img className='h-full w-full object-cover rounded' src="src/assets/Image/nj.jpg" alt="JiPlay" />
+              </div>
+              Job<span className='text-[#4334ca]'>Forge</span>
+            </Link>
           </h1>
         </div>
         <div className='items-center gap-5 md:flex hidden'>

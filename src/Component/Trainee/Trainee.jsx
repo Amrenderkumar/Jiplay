@@ -38,10 +38,10 @@ const jobs = [
 const Trainee = () => {
   return (
     <div>
-      <div>
-        <h1 className='text-4xl font-bold text-center my-10'>
+      <div className='bg-gray-100 shadow-md py-6 flex flex-col justify-center items-center rounded-2xl sticky top-0 z-50'>
+        <h1 className='text-4xl font-bold text-gray-800 text-center '>
           <span className='text-[blue]'>Latest & Trending Trainee</span> Openings
-          <div className='md:w-120 w-60 h-1 border-b-4 border-y-amber-400 rounded-2xl mt-1 mx-auto md:mt-2 mb-12'></div>
+          <div className='w-40 md:w-60 h-1 border-b-4 border-amber-400 rounded-2xl mt-2 mx-auto'></div>
         </h1>
       </div>
       <div>

@@ -1,12 +1,12 @@
 import {createBrowserRouter} from "react-router-dom"
-import Login from "./Component/Login";
-import Signup from "./Component/Signup";
+import Login from "./authentication/Login";
+import Signup from "./authentication/Signup";
 import Dashboard from "./Component/Dashboard";
-import Privacypolicy from "./Component/Privacypolicy";
+import Privacypolicy from "./Component/Privacypolicy/Privacypolicy";
 import Profile from "./Component/Profile";
-import Internship from "./Internship/Internship";
-import Trainee from "./Trainee/Trainee";
-import Job from "./Job/Job";
+import Internship from "./Component/Internship/Internship";
+import Trainee from "./Component/Trainee/Trainee";
+import Job from "./Component/Job/Job";
 
 export const router = createBrowserRouter([
     {
