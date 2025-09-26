@@ -1,5 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { MdCall } from "react-icons/md";
+import { IoMail } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -7,12 +9,15 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h3 className="text-white text-lg font-semibold mb-3 border-b-2 border-pink-500 inline-block">
-            Company
+            About
           </h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:text-pink-500">About Us</a></li>
-            <li><a href="#" className="hover:text-pink-500">Our Services</a></li>
-            <li><a href="#" className="hover:text-pink-500">User Profile</a></li>
+            <li><a href="#" className="hover:text-pink-500"><span className="font-semibold text-yellow-600">Jobforge </span> </a>Website is developed</li>
+            <li>by a team of dedicated professionals.</li>
+            <li>Users can easily find and apply for jobs.</li>
+            <li><MdCall className="inline-block" /> +91 85718-79674</li>
+            <li><IoMail className="inline-block" /> amrenderk66@gmail.com</li>
+            <img src="src/assets/Image/logo.png" className="mt-4 rounded-2xl" alt="" />
           </ul>
         </div>
         <div>
@@ -24,19 +29,22 @@ const Footer = () => {
             <li><a href="/Terms" className="hover:text-pink-500">Terms & Conditions</a></li>
             <li><a href="/Contact" className="hover:text-pink-500">Contact Us</a></li>
             <li>Address: Aman Nagar Mirzapur Road Hisar (Haryana)</li>
-            <li>Email: amrenderk66@gmail.com</li>
+            <li>Pincode: 125001</li>
 
           </ul>
         </div>
         <div>
           <h3 className="text-white text-lg font-semibold mb-3 border-b-2 border-pink-500 inline-block">
-            Services
+            Our Services
           </h3>
           <ul className="space-y-2">
-            <li><a href="/Internship" className="hover:text-pink-500">Internship</a></li>
-            <li><a href="/Job" className="hover:text-pink-500">Job Placement</a></li>
-            <li><a href="/Trainee" className="hover:text-pink-500">Training </a></li>
-            <li><a href="#" className="hover:text-pink-500">Interview Preparation</a></li>
+            <li><a href="/Internship" className="hover:text-pink-500">AI & ML</a></li>
+            <li><a href="/Job" className="hover:text-pink-500">Web Development</a></li>
+            <li><a href="/Trainee" className="hover:text-pink-500">UI/UX Design</a></li>
+            <li><a href="#" className="hover:text-pink-500">App Development</a></li>
+            <li><a href="#" className="hover:text-pink-500">Data Science</a></li>
+            <li><a href="#" className="hover:text-pink-500">Digital Marketing</a></li>
+            <li><a href="#" className="hover:text-pink-500">AI & Machine Learning</a></li>
           </ul>
         </div>
 
