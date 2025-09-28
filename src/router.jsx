@@ -7,6 +7,8 @@ import Profile from "./Component/Profile";
 import Internship from "./Component/Internship/Internship";
 import Trainee from "./Component/Trainee/Trainee";
 import Job from "./Component/Job/Job";
+import Terms from "./Component/Terms/Termsandcondion";
+import Contact from "./Component/Contact/Contact";
 
 export const router = createBrowserRouter([
     {
@@ -44,5 +46,13 @@ export const router = createBrowserRouter([
     {
         path: "/Job",
         element: <Job />
+    },
+    {
+        path: "/Terms",
+        element: <Terms />
+    },
+    {
+        path: "/Contact",
+        element: <Contact />
     }
 ]);

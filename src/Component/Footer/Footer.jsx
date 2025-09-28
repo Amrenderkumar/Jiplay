@@ -38,9 +38,9 @@ const Footer = () => {
             Our Services
           </h3>
           <ul className="space-y-2">
-            <li><a href="/Internship" className="hover:text-pink-500">AI & ML</a></li>
-            <li><a href="/Job" className="hover:text-pink-500">Web Development</a></li>
-            <li><a href="/Trainee" className="hover:text-pink-500">UI/UX Design</a></li>
+            <li><a href="" className="hover:text-pink-500">AI & ML</a></li>
+            <li><a href="" className="hover:text-pink-500">Web Development</a></li>
+            <li><a href="" className="hover:text-pink-500">UI/UX Design</a></li>
             <li><a href="#" className="hover:text-pink-500">App Development</a></li>
             <li><a href="#" className="hover:text-pink-500">Data Science</a></li>
             <li><a href="#" className="hover:text-pink-500">Digital Marketing</a></li>
