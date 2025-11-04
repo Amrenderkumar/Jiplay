@@ -10,7 +10,8 @@ const jobs = [
   Stipend: "15000 - 20,000 P.M.",
   type: "Full-time",
   mode: "Remote",
-  positions: 1
+  positions: 1,
+  link: ""
 },
 {
   id: 2,
@@ -48,29 +49,31 @@ const Trainee = () => {
         <div className="grid gap-6 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {jobs.map((job) => (
             <div
-              key={job.id}
-              className="border rounded-xl shadow-md p-4 hover:shadow-lg transition"
-            >
-              <h2 className="text-lg font-semibold">{job.company}</h2>
-              <p className="text-sm text-gray-500">{job.location}</p>
-              <h3 className="font-bold mt-2">{job.title}</h3>
-              <p className="text-gray-600 mt-1">{job.description}</p>
+  key={job.id}
+  onClick={() => window.open(job.link, "_blank")}
+  className="border rounded-xl shadow-md p-4 hover:shadow-lg hover:bg-blue-50 transition cursor-pointer"
+>
+  <h2 className="text-lg font-semibold">{job.company}</h2>
+  <p className="text-sm text-gray-500">{job.location}</p>
+  <h3 className="font-bold mt-2">{job.title}</h3>
+  <p className="text-gray-600 mt-1">{job.description}</p>
 
-              <div className="flex flex-wrap gap-2 mt-3">
-                <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-md text-sm">
-                  {job.Stipend}
-                </span>
-                <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded-md text-sm">
-                  {job.type}
-                </span>
-                <span className="px-2 py-1 bg-green-100 text-green-700 rounded-md text-sm">
-                  {job.mode}
-                </span>
-                <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">
-                  {job.positions} Positions
-                </span>
-              </div>
-            </div>
+  <div className="flex flex-wrap gap-2 mt-3">
+    <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-md text-sm">
+      {job.Stipend}
+    </span>
+    <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded-md text-sm">
+      {job.type}
+    </span>
+    <span className="px-2 py-1 bg-green-100 text-green-700 rounded-md text-sm">
+      {job.mode}
+    </span>
+    <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">
+      {job.positions} Positions
+    </span>
+  </div>
+</div>
+
           ))}
         </div>
       </div>

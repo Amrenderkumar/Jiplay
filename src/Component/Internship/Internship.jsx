@@ -240,7 +240,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: 150,
-    link: "—"
+    link: "https://viksitdelhi.delhi.gov.in/internship-programme.html"
   },
   {
     id: 14,
@@ -252,7 +252,7 @@ const jobs = [
     type: "Remote",
     mode: "Full Time",
     positions: "Multiple",
-    link: "As per post on X by CEO Siddharth Bhatia"
+    link: "https://puch.ai/careers"
   },
   {
     id: 15,
@@ -264,7 +264,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Email application via UIDAI portal"
+    link: "https://uidai.gov.in/careers.html"
   },
   {
     id: 16,
@@ -276,7 +276,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "MWCD internship portal"
+    link: "https://wcd.nic.in/internship-programme"
   },
   {
     id: 17,
@@ -288,7 +288,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "ISRO official internships page"
+    link: "https://www.isro.gov.in/careers"
   },
   {
     id: 18,
@@ -300,7 +300,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "DRDO internships portal"
+    link: "https://www.drdo.gov.in/careers"
   },
   {
     id: 19,
@@ -312,7 +312,7 @@ const jobs = [
     type: "Onsite / Hybrid",
     mode: "Full Time",
     positions: "Multiple",
-    link: "NITI Aayog internships portal"
+    link: "https://www.niti.gov.in/careers"
   },
   {
     id: 20,
@@ -324,7 +324,7 @@ const jobs = [
     type: "Hybrid / Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "MeitY internship scheme page"
+    link: "https://www.meity.gov.in/content/digital-india-internship-scheme"
   },
   {
     id: 21,
@@ -336,7 +336,7 @@ const jobs = [
     type: "Onsite / Hybrid",
     mode: "Full Time",
     positions: "Multiple",
-    link: "MeitY technical internship programme page"
+    link: "https://www.meity.gov.in/content/technical-internship-programme"
   },
   {
     id: 22,
@@ -348,7 +348,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: 20,
-    link: "MNRE internship programme page"
+    link: "https://www.mnre.gov.in/"
   },
   {
     id: 23,
@@ -360,7 +360,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "IIRS external internship page"
+    link: "https://www.iirs.gov.in/"
   },
   {
     id: 24,
@@ -372,7 +372,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "IIT-BHU partnership announcement"
+    link: "https://www.iitbhu.ac.in/"
   },
   {
     id: 25,
@@ -384,7 +384,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Refer to Airbus career’s page"
+    link: "https://www.airbus.com/en/careers"
   },
   {
     id: 26,
@@ -396,7 +396,7 @@ const jobs = [
     type: "Remote",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Apply via Flydocs career portal"
+    link: "https://flydocs.aero/"
   },
   {
     id: 27,
@@ -408,7 +408,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Apply via Amazon careers portal"
+    link: "https://www.amazon.jobs"
   },
   {
     id: 28,
@@ -420,7 +420,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Apply via Indeed or Baker Hughes internship listings"
+    link: "https://www.bakerhughes.com/careers"
   },
   {
     id: 29,
@@ -432,7 +432,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Refer to each institute's official notice (e.g., via WiseUp or institute websites)"
+    link: "https://www.iitbhu.ac.in/"
   },
   {
     id: 30,
@@ -444,7 +444,7 @@ const jobs = [
     type: "Remote",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Back End Developer Internship - Totle on Unstop"
+    link: "https://www.totle.com/careers"
   },
   {
     id: 31,
@@ -456,7 +456,7 @@ const jobs = [
     type: "Onsite / Hybrid",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Microsoft Software Engineer Apprenticeship on Unstop"
+    link: "https://www.microsoft.com/en-us/careers"
   },
   {
     id: 32,
@@ -468,7 +468,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Core Engineering Internship - Tower Research Capital India on Unstop"
+    link: "https://www.tower-research.com/careers"
   },
   {
     id: 33,
@@ -480,7 +480,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Software Engineer Internship - Cargill India on Unstop"
+    link: "https://www.cargill.com/careers"
   },
   {
     id: 34,
@@ -492,7 +492,7 @@ const jobs = [
     type: "Onsite",
     mode: "Full Time",
     positions: "100+",
-    link: "StockGro Campus Internship 2025 – BigShot 4.0 on Unstop"
+    link: "https://www.stockgro.com/careers"
   },
   {
     id: 35,
@@ -504,7 +504,7 @@ const jobs = [
     type: "Onsite / Hybrid",
     mode: "Full Time",
     positions: "Multiple",
-    link: "Electric Vehicles Design Internship - InternshipHub on Unstop"
+    link: "https://www.internshiphub.com/electric-vehicles-design-internship"
   }
 ];
 
@@ -519,30 +519,33 @@ function Internship() {
       </div>
       <div className="grid gap-6 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {jobs.map((job) => (
-          <div
-            key={job.id}
-            className="border rounded-xl shadow-md p-4 hover:shadow-lg transition"
-          >
-            <h2 className="text-lg font-semibold">{job.company}</h2>
-            <p className="text-sm text-gray-500">{job.location}</p>
-            <h3 className="font-bold mt-2">{job.title}</h3>
-            <p className="text-gray-600 mt-1">{job.description}</p>
+  <a
+    key={job.id}
+    href={job.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="border rounded-xl shadow-md p-4 hover:shadow-lg transition block hover:bg-blue-50"
+  >
+    <h2 className="text-lg font-semibold">{job.company}</h2>
+    <p className="text-sm text-gray-500">{job.location}</p>
+    <h3 className="font-bold mt-2">{job.title}</h3>
+    <p className="text-gray-600 mt-1">{job.description}</p>
 
-            <div className="flex flex-wrap gap-2 mt-3">
-              <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-md text-sm">
-                {job.salary}
-              </span>
-              <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded-md text-sm">
-                {job.type}
-              </span>
-              <span className="px-2 py-1 bg-green-100 text-green-700 rounded-md text-sm">
-                {job.mode}
-              </span>
-              <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">
-                {job.positions} Positions
-              </span>
-            </div>
-          </div>
+    <div className="flex flex-wrap gap-2 mt-3">
+      <span className="px-2 py-1 bg-blue-100 text-blue-700 rounded-md text-sm">
+        {job.salary}
+      </span>
+      <span className="px-2 py-1 bg-orange-100 text-orange-700 rounded-md text-sm">
+        {job.type}
+      </span>
+      <span className="px-2 py-1 bg-green-100 text-green-700 rounded-md text-sm">
+        {job.mode}
+      </span>
+      <span className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">
+        {job.positions} Positions
+      </span>
+       </div>
+       </a>
         ))}
       </div>
     </div>

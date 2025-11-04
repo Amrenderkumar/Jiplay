@@ -1,76 +1,32 @@
 import React from 'react'
-import Jobcard from './Jobcard';
 
- const randomJobs = [
-   {
-     id: 1,
-     Services: "Web Development",
-     location: "India",
-     description: "We are looking for a skilled web developer to join our team."
-   },
-   {
-     id: 2,
-     Services: "App Development",
-     location: "USA",
-     description: "Join us to create amazing mobile applications.the world."
-   },
-   {
-     id: 3,
-     Services: "UI/UX Design",
-     location: "UK",
-      description: "We need a creative UI/UX designer to enhance user experience."
-   },
-   {
-     id: 4,
-     Services: "Data Science",
-     location: "Canada",
-      description: "Seeking a data scientist to analyze and interpret complex data."
-   },
-   {
-     id: 5,
-     Services: "Digital Marketing",
-     location: "Australia",
-     description: "Looking for a digital marketing specialist to enhance our online presence."
-   },
-   {
-     id: 6,
-     Services: "Content Writing",
-     location: "Germany",
-      description: "We require a talented content writer to create engaging articles."
-   },
-   {
-      id: 7,
-      Services: "Cybersecurity",
-      location: "Singapore",
-      description: "Hiring a cybersecurity expert to protect our digital assets."
-   },
-   {
-      id: 8,
-      Services: "Cloud Computing",
-      location: "India",
-      description: "Seeking a cloud computing specialist to manage our cloud infrastructure."
-   },
-   {
-      id: 9,
-      Services: "AI & Machine Learning",
-      location: "USA",
-      description: "Looking for an AI/ML engineer to develop intelligent systems."
-   }
- ];
-const Latestjob = () => {
+
+
+const Skill = ["React","Node.js","Express","MongoDB"];
+const date1 = new Date();
+
+const Latestjob = (props) => {
   return (
-    <div>
-      <h1 className='text-4xl font-bold text-center my-10'>
-        <span className='text-[blue]'>All</span> Services
-        <div className='md:w-40 w-28 h-1 border-b-4 border-y-amber-400 rounded-2xl mt-1 mx-auto md:mt-2 mb-12'></div>
-      </h1>
-      <div className='grid gap-4 my-5 m-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 max-w-[1200px] mx-auto text-center'>
-      {randomJobs.map((job) => (
-        <Jobcard key={job.id} job={job} />
-      ))}
+    <div className='mx-40 mb-4 mt-4 space-y-6'>
+      <div className='flex justify-between items-center px-6 py-4 bg-zinc-100 rounded-md border border-black shadow-lime-100'>
+        <div className='flex flex-col items-start gap-3'>
+          <h1 className='text-lg font-semibold'>{props.title} - {props.company}</h1>
+          <p>{props.type} &#x2022; {props.experience} &#x2022; {props.location}</p>
+          <div className='flex items-center gap-2'>
+            {props.skills.map((skills, index) => (
+              <span key={index} className='bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded'>{skills}</span>
+            ))}
+          </div>
+        </div>
+        <div className='flex items-center gap-4'>
+          <h2>Posted on:</h2>
+          <p>{date1.toDateString()}</p>
+          <button className='text-blue-500 border border-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white'>Apply Now</button>
+        </div>
       </div>
     </div>
   )
 }
 
 export default Latestjob;
+

@@ -4,6 +4,8 @@ import Header from './Header';
 import Latestjob from './Latestjob';
 import Profile from './Profile';
 import { Link } from 'react-router-dom';
+import Jobdata from '@/Jobdata';
+import { LogIn } from 'lucide-react';
 
 const Dashboard = () => {
   return (
@@ -37,7 +39,18 @@ const Dashboard = () => {
       <div>
         <Header />
         <Categories />
-        <Latestjob />
+        {Jobdata.map((job, index) => (
+          <Latestjob
+            key={index} 
+            title={job.title}
+            company={job.company}
+            type={job.type}
+            experience={job.experience}
+            location={job.location}
+            skills={job.skills}
+            date={job.date}
+          />
+        ))}
         <Profile />
         <Footer />
       </div>

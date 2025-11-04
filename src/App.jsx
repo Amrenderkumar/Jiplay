@@ -39,4 +39,23 @@ function App() {
   );
 }
 
+
+function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((currentUser) => {
+      setUser(currentUser);
+    });
+
+    return () => unsubscribe();
+  }, []);
+
+  return (
+    <BrowserRouter>
+      <RouterProvider router={appRouter} />
+    </BrowserRouter>
+  );
+}
+
 export default App;

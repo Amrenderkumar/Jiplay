@@ -1,30 +1,31 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
-import { userAuth } from "../context/AuthContext";
-
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { app } from '../../firebase.config';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   
-  const { session } = userAuth();
-  const navigate = useNavigate();
+ const auth = getAuth(app);
 
-  const handleSubmit = (e) => {
+  const HandleLogin = async (e) => {
     e.preventDefault();
-    // fake login for now
-    if (email && password) {
-      navigate("/Dashboard"); // ✅ redirect after login
-    } else {
-      setError("Please enter email and password");
-    }
+   try{
+    await signInWithEmailAndPassword(auth, email, password);
+    console.log("logged in");
+   }
+    catch(err){
+      console.error("login error", err);
+      setError(err.code);
+   }
   };
 
   return (
-    <div className="pt-40 pb-24">
+    <div className="pt-40 pb-24 bg-neutral-100 min-h-screen">
       <form
-        onSubmit={handleSubmit}
+        onSubmit={HandleLogin}
         className="max-w-md m-auto pt-24 bg-neutral-50 rounded-2xl"
       >
         <h2 className="font-bold pb-2 text-3xl text-center">LOG IN</h2>
