@@ -6,6 +6,7 @@ import Profile from './Profile';
 import { Link } from 'react-router-dom';
 import Jobdata from '@/Jobdata';
 import { LogIn } from 'lucide-react';
+import { Userprofile } from './Userprofile';
 
 const Dashboard = () => {
   return (
@@ -15,7 +16,7 @@ const Dashboard = () => {
           <h1 className='text-3xl font-bold ml-5 text-center'>
             <Link className='flex items-center space-x-2' to="/">
               <div className='inline-block h-10 w-10 rounded-2xl overflow-hidden sm:mr-2 mr-0'>
-                <img className='h-full w-full object-cover rounded' src="src/assets/Image/nj.jpg" alt="JiPlay" />
+                <img className='h-full w-full object-cover rounded' src="src\assets\Image\nj.jpg" alt="JiPlay" />
               </div>
               Job<span className='text-[#4334ca]'>Forge</span>
             </Link>
@@ -28,9 +29,7 @@ const Dashboard = () => {
             <Link to="/trainee">Trainee</Link>
             <Link to="/job">Job</Link>
           </nav>
-          <button className='bg-[#cf0f0f] text-white px-5 py-2 rounded-lg hover:bg-[#f50707] transition box-content cursor-pointer mr-6' onClick={() => window.location.href = '/Login'}>
-            Log in
-          </button>
+          <Userprofile className="hidden md:block" />
         </div>
         <div className='md:hidden block'>
           <a className='text-3xl' href="#">&#8801;</a>

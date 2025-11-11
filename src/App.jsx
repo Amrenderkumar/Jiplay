@@ -11,15 +11,15 @@ import { router } from "./router";
 const appRouter = createBrowserRouter([
  {
   path: "/",
-  element: <Dashboard />,
+  element: <Dashboard />
  },
  {
   path: "/login",
-  element: <Login />,
+  element: <Login />
  },
  {
   path: "/signup",
-  element: <Signup />,
+  element: <Signup />
  },
  {
   path: "/Privacypolicy",

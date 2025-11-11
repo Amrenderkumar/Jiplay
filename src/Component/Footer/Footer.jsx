@@ -38,13 +38,13 @@ const Footer = () => {
             Our Services
           </h3>
           <ul className="space-y-2">
-            <li><a href="" className="hover:text-pink-500">AI & ML</a></li>
-            <li><a href="" className="hover:text-pink-500">Web Development</a></li>
-            <li><a href="" className="hover:text-pink-500">UI/UX Design</a></li>
-            <li><a href="#" className="hover:text-pink-500">App Development</a></li>
-            <li><a href="#" className="hover:text-pink-500">Data Science</a></li>
-            <li><a href="#" className="hover:text-pink-500">Digital Marketing</a></li>
-            <li><a href="#" className="hover:text-pink-500">AI & Machine Learning</a></li>
+            <li className="hover:text-pink-500">AI & ML</li>
+            <li className="hover:text-pink-500">Web Development</li>
+            <li className="hover:text-pink-500">UI/UX Design</li>
+            <li className="hover:text-pink-500">App Development</li>
+            <li className="hover:text-pink-500">Data Science</li>
+            <li className="hover:text-pink-500">Digital Marketing</li>
+            <li className="hover:text-pink-500">AI & Machine Learning</li>
           </ul>
         </div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
             Follow Us
           </h3>
           <div className="flex space-x-4 mt-3">
-            <a href="https://www.facebook.com" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-900 transition" src="">
+            <a href="https://www.facebook.com" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-blue-900 transition">
               <FaFacebookF />
             </a>
             <a href="https://x.com/amrenderk66" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-yellow-100 transition">

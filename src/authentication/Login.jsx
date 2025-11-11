@@ -1,25 +1,32 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";  
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from '../../firebase.config';
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  
- const auth = getAuth(app);
+
+  const auth = getAuth(app);
+  const navigate = useNavigate();
 
   const HandleLogin = async (e) => {
     e.preventDefault();
-   try{
-    await signInWithEmailAndPassword(auth, email, password);
-    console.log("logged in");
-   }
-    catch(err){
-      console.error("login error", err);
+    setLoading(true);
+    setError('');
+
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      console.log("✅ Logged in successfully!");
+      navigate("/Dashboard");
+    } catch (err) {
+      console.error("❌ Login error:", err);
       setError(err.code);
-   }
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -34,12 +41,14 @@ const Login = () => {
             className="p-3 mt-6 shadow-xl border-2 border-gray-700 focus:border-pink-600 text-black rounded-2xl"
             type="email"
             placeholder="Email"
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             className="p-3 mt-6 shadow-xl border-2 border-gray-700 focus:border-pink-600 text-black rounded-2xl"
             type="password"
             placeholder="Password"
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <button
@@ -47,7 +56,7 @@ const Login = () => {
             disabled={loading}
             className="mt-6 p-2 w-full shadow-xl bg-orange-500 text-white rounded-2xl"
           >
-            Log In
+            {loading ? "Logging in..." : "Log In"}
           </button>
           <p className="text-center">
             Don't have an account? <Link to="/signup">Sign Up</Link>

@@ -9,10 +9,11 @@ import Trainee from "./Component/Trainee/Trainee";
 import Job from "./Component/Job/Job";
 import Terms from "./Component/Terms/Termsandcondion";
 import Contact from "./Component/Contact/Contact";
+import ProtectedRoute from "./Component/ProtectedRoute";
 
 export const router = createBrowserRouter([
     {
-        path: "/login",
+        path: "/Login",
         element: <Login />
     },
     {
@@ -21,11 +22,11 @@ export const router = createBrowserRouter([
     },
     {
         path: "/",
-        element: <Dashboard />
+        element: <ProtectedRoute><Dashboard /></ProtectedRoute>
     },
     {
         path: "/Dashboard",
-        element: <Dashboard />
+        element: <ProtectedRoute><Dashboard /></ProtectedRoute>
     },
     {
         path: "/Privacypolicy",
