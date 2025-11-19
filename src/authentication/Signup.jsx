@@ -27,7 +27,7 @@ const Signup = () => {
 
   return (
     <div className='pt-22 pb-24 bg-neutral-100 min-h-screen'>
-      <form className='max-w-md m-auto pt-24 bg-gray-100 rounded-2xl' onSubmit={HandleSignin}>
+      <form className='max-w-md m-auto pt-24 bg-gray-50 rounded-2xl' onSubmit={HandleSignin}>
         <h2 className='font-bold text-center text-3xl'>SIGN IN</h2>
         <div className='flex flex-col p-5  py-4 rounded-2xl'>
           <input className='p-3 mt-6 shadow-xl border-2 border-gray-700 focus:border-pink-600 text-black rounded-2xl' type="text" placeholder='Username' onChange={(e) => setUsername(e.target.value)} />
