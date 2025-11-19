@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import Jobdata from '@/Jobdata';
 import { LogIn } from 'lucide-react';
 import { Userprofile } from './Userprofile';
+import Img from "../assets/Image/nj.jpg";
 
 const Dashboard = () => {
   return (
@@ -16,7 +17,7 @@ const Dashboard = () => {
           <h1 className='text-3xl font-bold ml-5 text-center'>
             <Link className='flex items-center space-x-2' to="/">
               <div className='inline-block h-10 w-10 rounded-2xl overflow-hidden sm:mr-2 mr-0'>
-                <img className='h-full w-full object-cover rounded' src="src\assets\Image\nj.jpg" alt="JiPlay" />
+                <img className='h-full w-full object-cover rounded' src={Img} alt="JiPlay" />
               </div>
               Job<span className='text-[#4334ca]'>Forge</span>
             </Link>

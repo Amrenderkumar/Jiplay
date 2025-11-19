@@ -1,4 +1,6 @@
 import React from "react";
+import Bahu from "../assets/Image/Bahu.png";
+import Shishir from "../assets/Image/Shishir.jpg";
 
 const departments = [
   {
@@ -9,7 +11,7 @@ const departments = [
         id: 1,
         name: "Amrender Kumar",
         role: "MERN Stack Developer",
-        image: "src/assets/Image/Bahu.png",
+        image: Bahu,
         alt: "Bahu",
       },
     ],
@@ -23,7 +25,7 @@ const departments = [
         id: 1,
         name: "Shishir Kumar Yadav",
         role: "Data Scientist",
-        image: "src/assets/Image/Shishir.jpg",
+        image: Shishir,
         alt: "Shishir",
       },
     ],
@@ -37,7 +39,7 @@ const departments = [
         id: 1,
         name: "Amrender Kumar",
         role: "UI/UX Designer",
-        image: "src/assets/Image/Bahu.png",
+        image: Bahu,
         alt: "Rocky",
       },
     ],

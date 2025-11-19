@@ -2,6 +2,8 @@ import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { MdCall } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
+import Fot from "../../assets/Image/logo.png";
+
 
 const Footer = () => {
   return (
@@ -17,7 +19,7 @@ const Footer = () => {
             <li>Users can easily find and apply for jobs.</li>
             <li><MdCall className="inline-block" /> +91 85718-79674</li>
             <li><IoMail className="inline-block" /> amrenderk66@gmail.com</li>
-            <img src="src/assets/Image/logo.png" className="mt-4 rounded-2xl" alt="" />
+            <img src={Fot} className="mt-4 rounded-2xl" alt="" />
           </ul>
         </div>
         <div>

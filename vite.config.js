@@ -9,7 +9,7 @@ export default defineConfig({
     tailwindcss()
   ],
 
-  base: '/jiplay/', 
+  base: '/', 
 
   resolve: {
     alias: {
